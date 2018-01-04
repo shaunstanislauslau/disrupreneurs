@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @ticket.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @ticket.last_name %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @ticket.contact_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @ticket.email %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @ticket.gender %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @ticket.company %>
+</p>
+
+<p>
+  <strong>Job title:</strong>
+  <%= @ticket.job_title %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @ticket.street_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @ticket.city %>
+</p>
+
+<p>
+  <strong>State province:</strong>
+  <%= @ticket.state_province %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @ticket.country %>
+</p>
+
+<p>
+  <strong>Number of employees:</strong>
+  <%= @ticket.number_of_employees %>
+</p>
+
+<p>
+  <strong>Industry:</strong>
+  <%= @ticket.industry %>
+</p>
+
+<p>
+  <strong>Referral:</strong>
+  <%= @ticket.referral %>
+</p>
+
+<p>
+  <strong>Track:</strong>
+  <%= @ticket.track %>
+</p>
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>

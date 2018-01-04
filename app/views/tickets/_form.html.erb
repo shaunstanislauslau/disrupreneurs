@@ -1,0 +1,92 @@
+<%= form_with(model: ticket, local: true) do |form| %>
+  <% if ticket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+
+      <ul>
+      <% ticket.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :ticket_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :ticket_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_number %>
+    <%= form.number_field :contact_number, id: :ticket_contact_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :ticket_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :ticket_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company, id: :ticket_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :job_title %>
+    <%= form.text_field :job_title, id: :ticket_job_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street_address %>
+    <%= form.text_field :street_address, id: :ticket_street_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :ticket_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state_province %>
+    <%= form.text_field :state_province, id: :ticket_state_province %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :ticket_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_employees %>
+    <%= form.number_field :number_of_employees, id: :ticket_number_of_employees %>
+  </div>
+
+  <div class="field">
+    <%= form.label :industry %>
+    <%= form.text_field :industry, id: :ticket_industry %>
+  </div>
+
+  <div class="field">
+    <%= form.label :referral %>
+    <%= form.text_field :referral, id: :ticket_referral %>
+  </div>
+
+  <div class="field">
+    <%= form.label :track %>
+    <%= form.number_field :track, id: :ticket_track %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

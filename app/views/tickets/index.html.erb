@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Contact number</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Company</th>
+      <th>Job title</th>
+      <th>Street address</th>
+      <th>City</th>
+      <th>State province</th>
+      <th>Country</th>
+      <th>Number of employees</th>
+      <th>Industry</th>
+      <th>Referral</th>
+      <th>Track</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.first_name %></td>
+        <td><%= ticket.last_name %></td>
+        <td><%= ticket.contact_number %></td>
+        <td><%= ticket.email %></td>
+        <td><%= ticket.gender %></td>
+        <td><%= ticket.company %></td>
+        <td><%= ticket.job_title %></td>
+        <td><%= ticket.street_address %></td>
+        <td><%= ticket.city %></td>
+        <td><%= ticket.state_province %></td>
+        <td><%= ticket.country %></td>
+        <td><%= ticket.number_of_employees %></td>
+        <td><%= ticket.industry %></td>
+        <td><%= ticket.referral %></td>
+        <td><%= ticket.track %></td>
+        <td><%= link_to 'Show', ticket %></td>
+        <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
+        <td><%= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ticket', new_ticket_path %>

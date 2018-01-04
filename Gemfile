@@ -18,6 +18,9 @@ gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
 gem 'jquery-rails'
 
+#stripe payment for tickets
+gem 'stripe'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -47,6 +50,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'dotenv-rails'
 end
 
 group :development do
