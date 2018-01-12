@@ -17,7 +17,7 @@
     <script src="bigvideo.js"></script>
 
 
-		<nav class="navbar navbar-toggleable-md navbar-inverse" style="background-color: black;">
+		<nav class="navbar sticky-top navbar-toggleable-md navbar-inverse", style="background-color: black; margin : 0 !important;">
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -57,8 +57,12 @@
 		    </ul>
 		  </div>
 		</nav>
-		<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-		    <source src="videos/demo.mp4" type="video/mp4">
-		</video>
+
+    <div class="container" style="padding-top:20cm">
+      <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+  		    <source src="videos/demo.mp4" type="video/mp4">
+  		</video>
+    </div>
+
 	</body>
 </html>
