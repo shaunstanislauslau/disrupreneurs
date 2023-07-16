@@ -15,7 +15,7 @@ gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 
 #bootstrap 4
-gem 'bootstrap', '~> 4.0.0.beta3'
+gem 'bootstrap', '~> 4.3.1'
 
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
